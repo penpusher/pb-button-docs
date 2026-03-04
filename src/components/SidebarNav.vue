@@ -2,7 +2,7 @@
   <aside class="sidebar">
     <div class="sidebar-header">
       <span class="sidebar-logo">PB</span>
-      <span class="sidebar-title">Design System</span>
+      <span class="sidebar-title">Design System Documentation</span>
     </div>
     <nav class="sidebar-nav">
       <p class="sidebar-section-title">Components</p>
