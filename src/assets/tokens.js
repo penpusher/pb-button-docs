@@ -44,3 +44,31 @@ export const spacing = [
 export const styles = ['primary', 'primary-brand', 'secondary', 'transparent']
 export const states = ['normal', 'hover', 'active-state', 'focus', 'disabled']
 export const sizes = ['medium', 'large']
+
+export const accordionColors = {
+  stroke: {
+    subtler: '#edebe4',
+    subtleHover: '#a8a392',
+  },
+  text: {
+    default: '#1e1e1e',
+    link: '#918d08',
+  },
+}
+
+export const accordionTypography = {
+  desktop: {
+    title: { token: 'Desktop/head-xs', family: 'Piraeus Open Sans', weight: 'Bold (700)', size: '20px', lineHeight: '1.2' },
+    content: { token: 'Desktop/par-md', family: 'Piraeus Open Sans', weight: 'Regular (400)', size: '16px', lineHeight: '1.4' },
+  },
+  mobile: {
+    title: { token: 'Mobile/(m)head-xs', family: 'Piraeus Open Sans', weight: 'Bold (700)', size: '22px', lineHeight: '1.2' },
+    content: { token: 'Mobile/(m)par-md', family: 'Piraeus Open Sans', weight: 'Regular (400)', size: '18px', lineHeight: '1.4' },
+  },
+}
+
+export const accordionSpacing = [
+  { token: 'spacing-3', value: '12px', usage: 'Right padding (icon area)' },
+  { token: 'spacing-4', value: '16px', usage: 'Vertical padding (mobile)' },
+  { token: 'spacing-5', value: '24px', usage: 'Vertical padding (desktop), gap between title and content' },
+]

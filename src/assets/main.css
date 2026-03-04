@@ -27,6 +27,12 @@
 
   --bg-disabled: #e9e9e9;
 
+  --text-default: #1e1e1e;
+  --text-link: #918d08;
+
+  --stroke-subtler: #edebe4;
+  --stroke-subtle-hover: #a8a392;
+
   --doc-bg: #f7f5f0;
   --doc-surface: #ffffff;
   --doc-text: #1a1a1a;

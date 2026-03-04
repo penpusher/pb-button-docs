@@ -9,19 +9,10 @@
       <a
         v-for="item in componentLinks"
         :key="item.id"
-        :href="'#' + item.id"
+        href="#"
         class="sidebar-link"
-        :class="{ active: activeSection === item.id }"
-        @click="$emit('navigate', item.id)"
-      >{{ item.label }}</a>
-      <p class="sidebar-section-title">Foundation</p>
-      <a
-        v-for="item in foundationLinks"
-        :key="item.id"
-        :href="'#' + item.id"
-        class="sidebar-link"
-        :class="{ active: activeSection === item.id }"
-        @click="$emit('navigate', item.id)"
+        :class="{ active: activePage === item.id }"
+        @click.prevent="$emit('navigate', item.id)"
       >{{ item.label }}</a>
     </nav>
   </aside>
@@ -29,19 +20,14 @@
 
 <script setup>
 defineProps({
-  activeSection: { type: String, default: 'button' },
+  activePage: { type: String, default: 'button' },
 })
 
 defineEmits(['navigate'])
 
 const componentLinks = [
+  { id: 'accordion', label: 'Accordion' },
   { id: 'button', label: 'Button' },
-]
-
-const foundationLinks = [
-  { id: 'tokens', label: 'Design Tokens' },
-  { id: 'typography', label: 'Typography' },
-  { id: 'spacing', label: 'Spacing' },
 ]
 </script>
 
