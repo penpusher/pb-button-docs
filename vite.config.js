@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/pb-button-docs/',
+  base: '/pb-design-system-docs/',
   plugins: [
     vue(),
     vueDevTools(),
